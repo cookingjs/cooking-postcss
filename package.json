@@ -1,0 +1,28 @@
+{
+  "name": "cooking-postcss",
+  "version": "0.0.0",
+  "description": "A cooking plugin.",
+  "private": true,
+  "keywords": [
+    "cooking"
+  ],
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cookingjs/cooking-postcss.git"
+  },
+  "homepage": "https://github.com/cookingjs/cooking-postcss#readme",
+  "bugs": {
+    "url": "https://github.com/cookingjs/cooking-postcss/issues"
+  },
+  "author": "qingwei-li",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^5.0.19",
+    "postcss-cssnext": "^2.5.2",
+    "postcss-loader": "^0.8.2"
+  },
+  "devDependencies": {}
+}
