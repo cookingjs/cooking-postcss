@@ -2,7 +2,7 @@
   "name": "cooking-postcss",
   "version": "0.0.0",
   "description": "A cooking plugin.",
-  "private": true,
+  "private": false,
   "keywords": [
     "cooking"
   ],
