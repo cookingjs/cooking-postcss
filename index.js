@@ -6,7 +6,12 @@ module.exports = function (cooking, options) {
   var plugins = []
 
   if (options.cssnext) {
-    plugins.push(require('postcss-cssnext'))
+    plugins.push(require('postcss-cssnext')(options.cssnext))
+    cooking.add('vue.autoprefixer', false)
+  }
+
+  if (options.bem) {
+    plugins.push(require('postcss-bem')(options.bem))
   }
 
   cooking.add('preLoader.postcss', {
