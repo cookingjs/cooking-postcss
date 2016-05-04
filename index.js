@@ -11,7 +11,7 @@ module.exports = function (cooking, options) {
 
   cooking.add('preLoader.postcss', {
     test: /\.css$/,
-    loaders: ['postcss']
+    loaders: ['postcss-loader']
   })
 
   cooking.add('postcss', function () {
