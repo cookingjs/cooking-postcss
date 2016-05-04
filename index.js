@@ -17,4 +17,8 @@ module.exports = function (cooking, options) {
   cooking.add('postcss', function () {
     return plugins
   })
+
+  cooking.add('vue.postcss', function () {
+    return plugins
+  })
 }
