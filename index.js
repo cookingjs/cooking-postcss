@@ -11,7 +11,7 @@ module.exports = function (cooking, options) {
   }
 
   if (options.nested) {
-    plugins.push(require('postcss-nested')()(options.nested)
+    plugins.push(require('postcss-nested')((options.nested))
   }
 
   if (options.bem) {
