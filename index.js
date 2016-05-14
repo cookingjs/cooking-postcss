@@ -10,6 +10,10 @@ module.exports = function (cooking, options) {
     cooking.add('vue.autoprefixer', false)
   }
 
+  if (options.nested) {
+    plugins.push(require('postcss-nested')()(options.nested)
+  }
+
   if (options.bem) {
     plugins.push(require('postcss-bem')(options.bem))
   }
