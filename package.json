@@ -21,9 +21,10 @@
   "license": "MIT",
   "dependencies": {
     "postcss": "^5.0.19",
+    "postcss-bem": "^0.4.1",
     "postcss-cssnext": "^2.5.2",
     "postcss-loader": "^0.8.2",
-    "postcss-bem": "^0.4.1"
+    "postcss-nested": "^1.0.0"
   },
   "devDependencies": {}
 }
