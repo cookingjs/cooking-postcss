@@ -4,6 +4,13 @@
  */
 module.exports = function (cooking, options) {
   var plugins = []
+  var version = cooking.version
+  version = version ? Number(version.split('.')[0]) : 0
+
+  if (version >= 1) {
+    console.warn('cooking 1.0 不支持 cooking-postcss 插件')
+    return
+  }
 
   if (options.cssnext) {
     plugins.push(require('postcss-cssnext')(options.cssnext))
